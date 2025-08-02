@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasith Chaturanga - Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="(0)1000245317.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r105/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Three.js Container -->
+    <div id="threejs-container"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Lasith.Me</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 id="animatedName">Lasith Chaturanga</h1>
+            <div class="hero-subtitle">full-stack software engineer & designer</div>
+            <p class="hero-description">
+                Hello, iam Lasith Chaturanga, a creative developer with a passion for building immersive web
+                experiences.
+                I specialize in crafting interactive applications using modern web technologies, with a focus on 3D
+                graphics and user-centered design.
+                My goal is to create engaging, performant, and accessible digital solutions that inspire and delight
+                users
+                across all devices.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-info">
+                <div class="about-text">
+                    <p>I'm a passionate full-stack developer with a love for creating beautiful, functional, and
+                        user-centered digital experiences. With expertise in modern web technologies and 3D graphics, I
+                        bring ideas to life through code.</p>
+                    <br>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source
+                        projects, or experimenting with creative coding and generative art.</p>
+                </div>
+
+                <div class="skills-section">
+                    <div class="skills-category">
+                        <h4>💻 Frontend Technologies</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">H</div>
+                                <span>Html</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">Css</div>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">JS</div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">TS</div>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚛️</div>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">3D</div>
+                                <span>Three.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>🚀 Backend & Database</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">N</div>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🐍</div>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">M</div>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">P</div>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🔥</div>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">G</div>
+                                <span>GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>🛠️ Tools & Other</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">G</div>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">D</div>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">A</div>
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">F</div>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">W</div>
+                                <span>WebGL</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">R</div>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Immersive 3D Portfolio</h3>
+                <p class="project-description">
+                    A cutting-edge portfolio website featuring interactive 3D elements, smooth animations,
+                    and responsive design. Built with Three.js and modern web technologies.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Three.js</span>
+                    <span class="tech-tag">WebGL</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/Chathuranga-l" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">AI Powered Chatbot</h3>
+                <p class="project-description">
+                    An intelligent chatbot application that leverages AI and natural language processing
+                    to provide instant support and information to users.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">Natural Language Processing</span>
+
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/Chathuranga-l" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Nature Conservation App</h3>
+                <p class="project-description">
+                    An innovative mobile application designed to raise awareness about environmental issues
+                    and promote conservation efforts through user engagement and education.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Expo</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">Mapbox</span>
+                    <span class="tech-tag">Geolocation</span>
+
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/Chathuranga-l" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">
+                    A full-featured e-commerce solution with real-time inventory management,
+                    secure payments, and an intuitive admin dashboard.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/Chathuranga-l" class="project-link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">AI Face Recognition</h3>
+                <p class="project-description">
+                    An advanced AI application for real-time face recognition and analysis,
+                    providing insights and analytics for various use cases.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">HTML5</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/Chathuranga-l" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="project-title">Data Visualization Dashboard</h3>
+                <p class="project-description">
+                    Interactive dashboard for complex data analysis with real-time updates,
+                    custom charts, and responsive design for all devices.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="https://github.com/Chathuranga-l" class="project-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+            <p>Ready to bring your next project to life? I'd love to hear from you and discuss how we can create
+                something amazing together.</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-input" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Advanced Mode Controls -->
+    <div class="advanced-mode">
+        <div class="advanced-toggle" id="advancedToggle">
+            <span>⚙️</span>
+            <span>Advanced</span>
+        </div>
+        <div class="advanced-panel" id="advancedPanel">
+            <div class="panel-section">
+                <h5>🎨 Theme</h5>
+                <div class="theme-selector">
+                    <div class="theme-option theme-blue active" data-theme="blue"></div>
+                    <div class="theme-option theme-purple" data-theme="purple"></div>
+                    <div class="theme-option theme-green" data-theme="green"></div>
+                    <div class="theme-option theme-orange" data-theme="orange"></div>
+                    <div class="theme-option theme-cyan" data-theme="cyan"></div>
+                    <div class="theme-option theme-pink" data-theme="pink"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">Lasith.Me</div>
+                <p class="footer-description">
+                    Passionate full-stack developer crafting exceptional digital experiences with modern web
+                    technologies and creative design.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/Chathuranga-l" class="social-link" target="_blank">GH</a>
+                    <a href="https://www.linkedin.com/in/chathuranga-l" class="social-link" target="_blank">LI</a>
+                    <a href="https://twitter.com/chathuranga_l" class="social-link" target="_blank">TW</a>
+                    <a href="mailto:lasithc117@gmail.com" class="social-link">EM</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <div class="footer-links">
+                    <a href="#">Web Development</a>
+                    <a href="#">UI/UX Design</a>
+                    <a href="#">Web App Development</a>
+                    <a href="#">Consulting</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lasith Chaturanga. All rights reserved. | Built with passion and modern web technologies.</p>
+        </div>
+    </footer>
+
+
+    <script src="scipt.js"></script>
+</body>
+
+</html>
